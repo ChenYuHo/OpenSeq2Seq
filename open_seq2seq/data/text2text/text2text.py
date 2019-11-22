@@ -90,7 +90,7 @@ class ParallelTextDataLayer(DataLayer):
                        "max_length should be multiple of 8")
 
     def file_len(fname):
-      with open(fname) as f:
+      with open(fname, "rb") as f:
         for i, l in enumerate(f):
           pass
       return i + 1
